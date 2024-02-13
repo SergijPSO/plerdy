@@ -63,3 +63,34 @@ openButtons.forEach((button) => {
 closeButton.addEventListener("click", () => {
   popup.style.display = "none";
 });
+
+// Form validation
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".app-popup__content-form");
+  form.addEventListener("submit", function (event) {
+    const nameInput = document.getElementById("contact-number");
+    const phoneNumberInput = document.querySelector(
+      ".app-popup__content-form__field-custom_select-input"
+    );
+    const checkbox = document.querySelector(
+      ".app-popup__content-form_checkbox"
+    );
+
+    if (nameInput.value.trim() === "") {
+      alert("Please enter your name");
+      event.preventDefault();
+      return;
+    }
+    if (phoneNumberInput.value.trim() === "") {
+      alert("Please enter your phone number");
+      event.preventDefault();
+      return;
+    }
+
+    if (!checkbox.checked) {
+      alert("Please agree to the terms and conditions");
+      event.preventDefault();
+      return;
+    }
+  });
+});
