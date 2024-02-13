@@ -36,7 +36,7 @@
   width: 100%;
   max-width: 140px;
   height: 34px;
-  background: url("/assets/images/logo.svg");
+  background: url("../assets/images/logo.svg");
   background-size: cover;
 }
 
