@@ -351,7 +351,7 @@
 .app-popup__content-form_title {
   padding: 0 10px;
   font-size: 34px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 120%;
   text-align: center;
   letter-spacing: 2px;
@@ -555,7 +555,7 @@
 
 .slick-headline {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 28px;
   color: var(--primary-grey);
   max-width: 88%;
@@ -598,6 +598,7 @@
 
   .app-banner {
     align-items: start;
+    margin-top: 123px;
   }
   .app-banner__description,
   .app-banner_image {
@@ -638,7 +639,6 @@
   .app-banner__description_text-main,
   .app-banner__description_text-secondary,
   .app-banner__description__partners-title {
-    font-size: 12px;
     line-height: unset;
     text-align: initial;
   }
@@ -769,5 +769,13 @@
   .slick-headline {
     font-size: 20px;
     max-width: unset;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .app-banner__description_text-main,
+  .app-banner__description_text-secondary,
+  .app-banner__description__partners-title {
+    font-size: 12px;
   }
 }
